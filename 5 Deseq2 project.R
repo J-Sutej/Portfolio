@@ -61,7 +61,7 @@ keep <- rowSums(counts(dds)) >= 10
 dds <- dds[keep,]
 
 # set factor level 
-dds$dexamethasone <- relevel(dds<-dexamethasone, ref = "untreated")
+dds$dexamethasone <- relevel(dds$dexamethasone, ref = "untreated")
 
 # NOTE: collapse technical replicates
 
